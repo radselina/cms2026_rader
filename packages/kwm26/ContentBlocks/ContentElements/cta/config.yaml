@@ -1,0 +1,19 @@
+name: fhooe/cta
+typeName: fhooe_cta
+group: default
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true
+  -
+    identifier: text
+    type: Textarea
+  -
+    identifier: buttonText
+    type: Text
+  -
+    identifier: buttonLink
+    type: Link
+

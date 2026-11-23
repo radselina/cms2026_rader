@@ -1,0 +1,42 @@
+//interne konfiguration
+page {
+    includeCSS {
+        theme = EXT:kwm26/Resources/Public/Scss/Theme/theme.scss
+        css = https://use.fontawesome.com/releases/v6.4.2/css/all.css
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        kwm26_scripts = EXT:kwm26/Resources/Public/JavaScript/main.js
+    }
+}
+
+lib.contentBlock {
+    templateRootPaths {
+        5 = EXT:bootstrap_package/Resources/Private/Templates/ContentElements
+    }
+    partialRootPaths {
+        5 = EXT:bootstrap_package/Resources/Private/Partials/ContentElements
+    }
+    layoutRootPaths {
+        5 = EXT:bootstrap_package/Resources/Private/Layouts/ContentElements
+    }
+}
+
+# Content Blocks:
+# Nested Content Elements sollen nicht zusätzlich
+# als normale Seitenelemente gerendert werden.
+
+styles.content.get.select.where.postUserFunc = TYPO3\CMS\ContentBlocks\UserFunction\ContentWhere->extend
+lib.dynamicContent.20.select.where.postUserFunc = TYPO3\CMS\ContentBlocks\UserFunction\ContentWhere->extend

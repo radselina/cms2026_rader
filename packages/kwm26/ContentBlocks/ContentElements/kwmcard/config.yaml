@@ -1,0 +1,33 @@
+name: fhooe/kwmcard
+typeName: fhooe_kwmcard
+title: 'KWM Card Element'
+description: 'Used for own KWM cards'
+fields:
+  -
+    identifier: image
+    label: Image
+    useExistingField: true
+    prefixFields: false
+    maxitems: 1
+    minitems: 1
+  -
+    identifier: header
+    type: Text
+    label: Header
+    useExistingField: true
+    prefixFields: false
+    required: true
+  -
+    identifier: bodytext
+    type: Textarea
+    label: Bodytext
+  -
+    identifier: link
+    type: Link
+    label: Link
+  -
+    identifier: linktext
+    type: Text
+    label: Linktext
+    default: 'Mehr erfahren'
+basics: {  }

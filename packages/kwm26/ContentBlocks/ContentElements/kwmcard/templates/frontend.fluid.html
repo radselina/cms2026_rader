@@ -1,0 +1,44 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+
+<f:layout name="Default" />
+
+
+<f:section name="Main">
+    <div class="kwmcard card h-100">
+        <f:for each="{data.image}" as="image">
+            <f:image
+                image="{image}"
+                class="card-img-top"
+                alt="{image.alternative}"
+            />
+        </f:for>
+
+
+        <div class="card-body">
+            <h3 class="card-title">
+                {data.header}
+            </h3>
+
+
+            <f:if condition="{data.bodytext}">
+                <p class="card-text">
+                    {data.bodytext}
+                </p>
+            </f:if>
+
+
+            <f:if condition="{data.link.url}">
+                <f:link.typolink
+                    parameter="{data.link}"
+                    class="btn btn-primary">
+                    {data.linkText}
+                </f:link.typolink>
+            </f:if>
+        </div>
+    </div>
+</f:section>
+</html>
+

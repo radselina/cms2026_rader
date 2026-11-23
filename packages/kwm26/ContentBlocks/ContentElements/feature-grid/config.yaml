@@ -1,0 +1,26 @@
+name: fhooe/feature-grid
+typeName: fhooe_featuregrid
+title: 'KWM Feature Grid'
+description: 'Description for ContentBlock'
+
+fields:
+  - identifier: header
+    label: Header
+    required: true
+    useExistingField: true
+    prefixFields: false
+
+  - identifier: intro
+    type: Textarea
+    label: 'Introduction Text'
+    required: false
+
+  - identifier: cards
+    type: Collection
+    label: Cards
+    foreign_table: tt_content
+    allowedRecordTypes:
+      - fhooe_kwmcard
+    minItems: 1
+
+basics: {}

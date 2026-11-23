@@ -1,0 +1,23 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+
+<f:layout name="Default"/>
+
+<f:section name="Main">
+    <div class="cta">
+        <div class="cta_content">
+            <h2>{data.header}</h2>
+            <p>{data.text}</p>
+            <f:link.typolink  parameter="{data.buttonLink}" class="cta_button">
+                {data.buttonText}
+            </f:link.typolink>
+        </div>
+    </div>
+
+</f:section>
+
+
+</html>

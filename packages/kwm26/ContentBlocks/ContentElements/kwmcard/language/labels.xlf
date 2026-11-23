@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="labels.xlf" source-language="en" date="2026-11-16T13:50:49+00:00" product-name="fhooe/kwmcard">
+    <header/>
+    <body>
+      <trans-unit id="title">
+        <source>KWM Card Element</source>
+      </trans-unit>
+      <trans-unit id="description">
+        <source>Used for own KWM cards</source>
+      </trans-unit>
+      <trans-unit id="image.label">
+        <source>Image</source>
+      </trans-unit>
+      <trans-unit id="text_0.label">
+        <source>Text1</source>
+      </trans-unit>
+      <trans-unit id="bodytext.label">
+        <source>Textarea2</source>
+      </trans-unit>
+      <trans-unit id="linkt.label">
+        <source>Link</source>
+      </trans-unit>
+      <trans-unit id="linktext.label">
+        <source>Linktext</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
